@@ -13,23 +13,30 @@
 - Created a word cloud of restaurant compliments using review data to visualize frequently mentioned positive terms.
 
 ## Neural Network:
-Gained a basic idea of what neural networks do and how backpropagation is the key factor for calculation of wieghts and biases.
-**understoood the workng of gradient descent as a tool for optimising parameters**
-Learnt about the argmax and softmax functions for dealing with a multi-output layer.
+
+- Gained foundational knowledge of neural networks, including the role of backpropagation in updating weights and biases.
+
+- Explored gradient descent as an optimization technique for parameter tuning.
+
+- Learned about the argmax and softmax functions for handling multi-class outputs.
+
+PyTorch
 
 ## Pytorch:
-I now understand this machine learning library is a powerfool tool in creating a neural network.
-I made a manual linear model and a manual algorithm for optimising weights using gradient descent and then used autograd and the NN module for creating a linear model and optimisng weights.
-This helped me get an insight into optimising hundreds of parameters that may be present in a neural network.
+- Understood PyTorch as a powerful library for building neural networks.
+
+- Built a manual linear model and implemented gradient descent for weight optimization, then transitioned to using PyTorch’s autograd and nn modules for more efficient model creation and training.
+
+- Gained insight into optimizing large numbers of parameters in neural networks
 
 ## Recurrent Neural Netwroks:
-They are life-savers when it comes to sequential inputs that may vary in size and outputs that may vary in size too. They accumulate information from previous states instead of just current state for predicting output.
+- Discovered the effectiveness of RNNs for handling sequential data with variable input and output lengths, thanks to their ability to retain information across time steps.
 
-**However, simple RNNs and not used widely due to the vanishing / exploding gradient problem.**
+***Noted the limitations of basic RNNs, such as the vanishing and exploding gradient problems.***
 
-I tried training and testing an RNN model for classifying names into their country of origin by taking sequential character level input using the dataset and nn modules in pytorch.
-This helped me understand the role of features in the hidden layer and the sofmax of output tensor. 
-We can improve our optimising function by increasing number of epochs and changing value for learning rate.
+- Trained and tested an RNN model in PyTorch to classify names by country of origin using character-level sequential input, which deepened understanding of hidden layer features and softmax output interpretation.
+
+- Experimented with improving model performance by adjusting the number of epochs and learning rate during optimization.
 
 
 
