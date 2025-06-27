@@ -20,7 +20,6 @@
 
 - Learned about the argmax and softmax functions for handling multi-class outputs.
 
-PyTorch
 
 ## Pytorch:
 - Understood PyTorch as a powerful library for building neural networks.
