@@ -12,7 +12,7 @@
 
 - Created a word cloud of restaurant compliments using review data to visualize frequently mentioned positive terms.
 
-## Neural Network:
+## Neural Networks:
 
 - Gained foundational knowledge of neural networks, including the role of backpropagation in updating weights and biases.
 
@@ -28,7 +28,7 @@
 
 - Gained insight into optimizing large numbers of parameters in neural networks
 
-## Recurrent Neural Netwroks:
+## Recurrent Neural Networks:
 - Discovered the effectiveness of RNNs for handling sequential data with variable input and output lengths, thanks to their ability to retain information across time steps.
 
 ***Noted the limitations of basic RNNs, such as the vanishing and exploding gradient problems.***
