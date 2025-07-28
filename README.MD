@@ -1,4 +1,4 @@
-**This is a summary of what I have learnt during this project so far.**
+**This is a summary of what I have learnt during this project.**
 
 ## Text Processing:
 
@@ -36,6 +36,9 @@
 - Trained and tested an RNN model in PyTorch to classify names by country of origin using character-level sequential input, which deepened understanding of hidden layer features and softmax output interpretation.
 
 - Experimented with improving model performance by adjusting the number of epochs and learning rate during optimization.
+
+# Making of the Final Project:
+
 
 
 
