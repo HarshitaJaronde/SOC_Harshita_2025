@@ -37,6 +37,16 @@
 
 - Experimented with improving model performance by adjusting the number of epochs and learning rate during optimization.
 
+## Gated Neural Networks and LSTMs (Long Short Term Memory):
+
+-Gated architectures incorporate special mechanisms—called gates—that control the flow of information through the network. These gates decide how much past information should be kept and how much should be forgotten at each step.
+
+-By employing these gates, the network effectively passes forward essential data while filtering out irrelevant inputs, allowing it to maintain important sequential context over longer periods.
+
+-Examples of such gated architectures include Long Short-Term Memory (LSTM) networks and Gated Recurrent Units (GRUs), which are both designed to overcome the memory limitations of vanilla RNNs.
+
+-While both LSTMs and GRUs are gated neural networks, GRUs are generally considered simpler and often more efficient than LSTMs due to their streamlined gating structure (GRUs combine the forget and input gates into a single update gate).
+
 # Making of the Final Project:
 
 Final Project: Financial News Sentiment + Stock Correlation
