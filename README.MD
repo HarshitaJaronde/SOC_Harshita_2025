@@ -69,8 +69,25 @@ These will then be passed as x coordintes for the ReLU activation function.
 Then we pass this sequence through LSTM.
 Finally, we use the output from the last time step as input to a linear function with three output classes.
 
+## Training:
 
+->I will use Sentences_AllAgree.txt for initial model training to ensure your model learns from the most unambiguous, high-confidence examples.
 
+->Gradually include datasets with lower agreement (75%, 66%, 50%) to increase the diversity and coverage of our training data.
+
+->This exposes the model to more nuanced or ambiguous cases, which can improve its generalization to real-world data.
+
+->After training the model using all three text files, I made a plot showing average loss per epoch for tensors from each of the All_agree, 75_agree and 66_agree text files.
+
+## Stock Data Visualisation:
+
+* We need to visualise how a prediction from this model can be related to the change in stock price.
+* I collected some news statements and the corresponding change in the stock price of the company associated with it.
+* There is again a preprocess function for differentiating the statementents and the corresponding change.
+
+-> The statements are then converted into tensors such that they can be used as inputs for our model.
+
+***I created a plot showing that a 'neutral' sentiment output from the model corresponded to a change in stock price in range (0-5)% whereas a 'positive' sentiment output corresponded to an increase in of (6-12)%***
 
 
 
