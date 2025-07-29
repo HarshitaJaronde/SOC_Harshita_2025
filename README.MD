@@ -39,6 +39,39 @@
 
 # Making of the Final Project:
 
+Final Project: Financial News Sentiment + Stock Correlation
+Problem: Analyze news sentiment and see its correlation with stock price movements.*
+Impact: Helps novice investors understand the impact of news.
+Model: LSTM for sentiment + stock data visualization.
+
+Dataset:[Financial Phrasebank] https://www.researchgate.net/publication/251231364
+
+** Processing Files:
+->Separated news statements and sentiments from the text files in which they have an '@' delimeter. This required open from io to read files and regex to match the required patttern.
+
+** Making and Saving Vocabulary
+
+-> I made a token counter to contain all the unique words. Tensors will need to be crated based on word indexes. However, there are numerical strings too and their importance must be retained for a stock setiment analysis model. Hence, they are dealt differently. 
+ -> Our statement vector would begin with a start of string 'SOS' token and end with an end of string 'EOS' token. The '%' and 'us$' were not added in the counter due to .is_alpha attribute and hence we add them now.
+
+-> We could store the numbers as is but they might clash with words at that index and hence they will be saved with an offset.
+
+** Converting statements and sentiments into tensors:
+
+-> Many of the numbers are floating numbers in our data files and this is why I am creating tensors with dtype=float.32.
+
+-> If an unknown word not present in the vocabulary is encounteres, it can be assigned the index for the UNK_TOKEN
+
+** Designing our neural network:
+
+Since I am using tensors with floating inputs, embedding cannot be used. This is why I will convert the statement tensors into dense matrices with nn.Linear.
+These will then be passed as x coordintes for the ReLU activation function.
+Then we pass this sequence through LSTM.
+Finally, we use the output from the last time step as input to a linear function with three output classes.
+
+
+
+
 
 
 
