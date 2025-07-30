@@ -37,7 +37,7 @@
 
 - Experimented with improving model performance by adjusting the number of epochs and learning rate during optimization.
 
-## Gated Neural Networks and LSTMs (Long Short Term Memory):
+## Gated Neural Networks:
 
 - Gated architectures incorporate special mechanisms—called gates—that control the flow of information through the network. These gates decide how much past information should be kept and how much should be forgotten at each step.
 
